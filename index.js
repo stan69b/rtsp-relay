@@ -1,7 +1,5 @@
 // @ts-check
-const ffmpegPath = /** @type {string} */ (
-  /** @type {unknown} */ (require('ffmpeg-static'))
-);
+const ffmpegPath = '/usr/bin/ffmpeg';
 const { spawn } = require('child_process');
 const ews = require('express-ws');
 const ps = require('ps-node');

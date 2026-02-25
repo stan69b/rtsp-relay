@@ -1,8 +1,7 @@
 const express = require('express');
 const { spawn } = require('child_process');
-const ffmpegPath = /** @type {string} */ (
-  /** @type {unknown} */ (require('ffmpeg-static'))
-);
+
+const ffmpegPath = '/usr/bin/ffmpeg';
 const { join } = require('path');
 const rtspRelay = require('..');
 
